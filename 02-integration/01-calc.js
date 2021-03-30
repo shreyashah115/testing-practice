@@ -1,22 +1,23 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
+const sum = require("../01-unit/01-sum");
+const difference = require("../01-unit/02-difference");
+const product = require("../01-unit/03-product");
+const quotient = require("../01-unit/04-quotient");
+
 function calc(command, num1, num2) {
   switch (command) {
     case "add":
-      var sum = require("../01-unit/01-sum");
       return sum.action(num1, num2);
       break;
     case "subtract":
-      var difference = require("../01-unit/02-difference");
       return difference.action(num1, num2);
       break;
     case "multiply":
-      var product = require("../01-unit/03-product");
       return product.action(num1, num2);
       break;
     case "divide":
-      var quotient = require("../01-unit/04-quotient");
       return quotient.action(num1, num2);
       break;
     default:
