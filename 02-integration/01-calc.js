@@ -10,16 +10,12 @@ function calc(command, num1, num2) {
   switch (command) {
     case "add":
       return sum.action(num1, num2);
-      break;
     case "subtract":
       return difference.action(num1, num2);
-      break;
     case "multiply":
       return product.action(num1, num2);
-      break;
     case "divide":
       return quotient.action(num1, num2);
-      break;
     default:
       return "Operation not supported.";
   }
